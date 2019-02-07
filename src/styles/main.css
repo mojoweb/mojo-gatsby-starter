@@ -1,0 +1,75 @@
+@import url("./reset.css");
+@import url("./fonts.css");
+
+html {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+  box-sizing: inherit;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 70px;
+  max-width: 1270px;
+}
+
+.page_headline {
+  font-size: 3em;
+  margin: 10px 0px;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.responsive-img {
+  max-width: 100%;
+  height: auto;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.half-width {
+  width: 50%;
+}
+
+.flex_grid {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.flex_grid.two .flex_grid_item {
+  width: 50%;
+}
+
+.flex_grid.three .flex_grid_item {
+  width: 33.33333333%;
+}
+
+.flex_grid.four .flex_grid_item {
+  width: 25%;
+}
+
+.flex_grid.five .flex_grid_item {
+  width: 20%;
+}
+
+.card_item {
+  margin: 20px 0px;
+  padding: 20px;
+}
