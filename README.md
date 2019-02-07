@@ -1,4 +1,4 @@
-<code>
+
     gatsby new project "https://github.com/mojoweb/mojo-gatsby-starter.git"</br>
     
     cd project
@@ -8,4 +8,3 @@
     localhost:8000
 
     woolah!
-</code>
