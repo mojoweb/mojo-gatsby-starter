@@ -1,10 +1,10 @@
 
-    gatsby new project "https://github.com/mojoweb/mojo-gatsby-starter.git"</br>
+    1. gatsby new project "https://github.com/mojoweb/mojo-gatsby-starter.git"
     
-    cd project
+    2. cd project
     
-    gatsby develop
+    3. gatsby develop
     
-    localhost:8000
+    4. localhost:8000
 
     woolah!
