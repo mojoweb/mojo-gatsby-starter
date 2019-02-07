@@ -1,8 +1,13 @@
 module.exports = {
   siteMetadata: {
-    title: `Mojo Gatsby Starter`,
+    title: "Mojo Gatsby Starter",
+    titleTemplate: "Mojo Gatsby Starter",
+    description:
+      "Very nice starter!",
+    url: "https://www.mojo.is", // No trailing slash allowed!
+    image: "/src/images/mojo-icon.png", // Path to your image you placed in the 'static' folder
+    twitterUsername: "@mojoweb",
   },
-  pathPrefix: `/img`,
   plugins: [
     `gatsby-plugin-react-helmet`,
     {

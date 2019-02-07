@@ -6,9 +6,10 @@ export default class AppLayout extends Component {
   
   render(){
     const { children, location } = this.props
+    console.log(location);
     return(
       <React.Fragment>
-        <Header />
+        <Header pathname={location.pathname} />
         <Transition location={location}>
           {children}
         </Transition>

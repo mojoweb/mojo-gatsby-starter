@@ -17,6 +17,10 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+a.active {
+  color: #1f87e5;
+}
+
 .container {
   margin: 0 auto;
   width: 100%;
@@ -69,7 +73,23 @@ body {
   width: 20%;
 }
 
-.card_item {
-  margin: 20px 0px;
-  padding: 20px;
+.flex_grid.two .flex_grid_item:nth-child(2n) .card_item {
+  margin-right: 0px;
 }
+
+.flex_grid.three .flex_grid_item:nth-child(3n) .card_item {
+  margin-right: 0px;
+}
+
+.flex_grid.four .flex_grid_item:nth-child(4n) .card_item {
+  margin-right: 0px;
+}
+
+.flex_grid.five .flex_grid_item:nth-child(5n) .card_item {
+  margin-right: 0px;
+}
+
+.card_item {
+  margin: 20px 20px 20px 0px;
+}
+

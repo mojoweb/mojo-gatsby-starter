@@ -3,7 +3,28 @@ import Hero from '../components/Hero/Hero.jsx';
 import Image from '../helpers/Transition/ImageTransition.jsx'
 import FlexGrid from '../helpers/FlexGrid/FlexGrid.jsx'
 import Transition from '../helpers/Transition/TextTransition.jsx'
+import SEO from '../helpers/SEO/SEO.jsx'
 import { Link } from 'gatsby';
+
+let duration = 300;
+let delay = 1250;
+
+const defaultStyles = {
+  opacity: 0,
+  transform: 'translate3d(0px, 50px, 0px)',
+  transition: `all ${duration}ms ease-out`
+}
+
+const transitionStyles = {
+  entering: { 
+    opacity: 0,
+    transform: 'translate3d(0px, 50px, 0px)',
+  },
+  entered:  { 
+    opacity: 1,
+    transform: 'translate3d(0px, 0px, 0px)',
+   },
+};
 
 
 export default () => {
@@ -28,10 +49,11 @@ export default () => {
   
   return (
     <React.Fragment>
+      <SEO />
       <Hero headline={`Þú ert á síðu tvö!`} subheadline={`Vonandi er það gaman!`} imgSrc={'https://images.unsplash.com/photo-1526319238109-524eecb9b913?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1610&q=80'} />
-      <div className="container">
-        <FlexGrid perRow={2} items={mapGridItems(items)} />
-      </div>
+      <Transition className={'container'} transitionStyles={transitionStyles} defaultStyles={defaultStyles} duration={duration} delay={delay}>
+        <FlexGrid perRow={3} items={mapGridItems(items)} />
+      </Transition>
     </React.Fragment>
   )
 }
